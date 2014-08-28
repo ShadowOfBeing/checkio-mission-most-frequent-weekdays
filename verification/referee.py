@@ -36,7 +36,7 @@ from tests import TESTS
 
 cover = """
 def cover(f, data):
-    return f(tuple(data[0]) tuple(data[1]))
+    return f(tuple(data[0]), tuple(data[1]))
 """
 
 api.add_listener(
