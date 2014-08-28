@@ -44,7 +44,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
 
             var checkioInput = data.in || [[2014, 1, 1], [2015, 1, 1]];
             var checkioInputStr = fname + '(' + JSON.stringify(checkioInput[0]).replace("[", "(").replace("]", ")") +
-                + ", " + JSON.stringify(checkioInput[1]).replace("[", "(").replace("]", ")") + ')';
+                ", " + JSON.stringify(checkioInput[1]).replace("[", "(").replace("]", ")") + ')';
 
             var failError = function (dError) {
                 $content.find('.call').html(checkioInputStr);
