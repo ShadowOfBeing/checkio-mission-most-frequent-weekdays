@@ -1,0 +1,61 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        Don't invent bicycle, Python has libraries to work wit date in time.
+        Read about <a href="https://docs.python.org/2/library/datetime.html">datetime</a>,
+        <a href="https://docs.python.org/2/library/datetime.html#date-objects">date</a>
+        and <a href="https://docs.python.org/2/library/datetime.html#timedelta-objects">timedelta</a>.
+<pre>
+from datetime import date, timedelta
+
+f = date(2014, 12, 31) # 31 december 2014
+s = date(2011, 1, 1) # 1 january 2011
+f - s == datetime.timedelta(1460)
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        You can initialize dates hard way or with little trick.
+<pre>
+t = (2010, 2, 3)
+date(t[0], t[1], t[2])
+# or
+date(*t)
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        If we subtract dates, then we get timedelta data type. But we need days as integer. Just get as an attribute.
+<pre>
+timedelta(5).days == 5
+(date(2014, 12, 31) - date(2011, 1, 1)).days == 1460
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        Don't forget -- the difference is positive. So use "abs" built-in function.
+<pre>
+abs(5) == abs(-5) == 5
+(date(2011, 1, 1) - date(2014, 12, 31)).days == -1460
+abs((date(2011, 1, 1) - date(2014, 12, 31)).days) == 1460
+</pre>
+    </div>
+</div>
+
+
+</body>
