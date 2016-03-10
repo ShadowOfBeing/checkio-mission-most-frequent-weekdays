@@ -44,8 +44,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         cover_code={
-            'python-27': cover,
-            'python-3': cover
+            'python-27': None,
+            'python-3': None
         },
         function_name="most_frequent_days"
         # checker=None,  # checkers.float.comparison(2)
