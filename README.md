@@ -1,4 +1,4 @@
-checkio-mission-dates-days
+checkio-mission-most-frequent-weekdays
 =====================
 
-Checkio Mission "Days between"
+Checkio Mission "Most Frequent Weekdays"
