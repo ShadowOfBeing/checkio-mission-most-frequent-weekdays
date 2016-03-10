@@ -1,11 +1,12 @@
-def days_diff(date1, date2):
+def most_frequent_days(year):
     """
-        Find absolute diff in days between dates
+        List of most frequent weekdays in the given year
     """
-    return 0
+    return ['Monday'] 
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert days_diff((1982, 4, 19), (1982, 4, 22)) == 3
-    assert days_diff((2014, 1, 1), (2014, 8, 27)) == 238
-    assert days_diff((2014, 8, 27), (2014, 1, 1)) == 238
+    assert most_frequent_days(2399) ==  ['Friday']
+    assert most_frequent_days(1152) == ['Tuesday', 'Wednesday']
+    assert most_frequent_days(56) == ['Saturday', 'Sunday']
+    assert most_frequent_days(2909) == ['Tuesday']
