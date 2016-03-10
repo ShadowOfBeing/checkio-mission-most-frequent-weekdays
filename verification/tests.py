@@ -4,78 +4,111 @@ Keys for this will be categories' names.
 Each test is dict with
     "input" -- input data for user function
     "answer" -- your right answer
-    "explanation" -- not necessary key, it's using for additional info in animation.
+    "explanation" -- not necessary key,
+    it's using for additional info in animation.
 """
 
 TESTS = {
-    "Basics": [
-        {
-            "input": ((1982, 4, 19), (1982, 4, 22)),
-            "answer": 3
-        },
-        {
-            "input": ((2014, 1, 1), (2014, 8, 27)),
-            "answer": 238
-        },
-        {
-            "input": ((2014, 8, 27), (2014, 1, 1)),
-            "answer": 238
-        },
-
-    ],
-    "Extra": [
-        {
-            "input": ((1, 1, 1), (9999, 12, 31)),
-            "answer": 3652058
-        },
-        {
-            "input": ((9999, 12, 31), (1, 1, 1)),
-            "answer": 3652058
-        },
-        {
-            "input": ((1970, 1, 1), (2000, 1, 1)),
-            "answer": 10957
-        },
-        {
-            "input": ((2014, 2, 28), (2014, 2, 28)),
-            "answer": 0
-        },
-        {
-            "input": ((2012, 2, 29), (2014, 2, 28)),
-            "answer": 730
-        },
-
-        {
-            "input": ((7015, 1, 11), (8992, 2, 21)),
-            "answer": 722126
-        },
-        {
-            "input": ((7410, 4, 9), (9884, 3, 16)),
-            "answer": 903587
-        },
-        {
-            "input": ((4139, 10, 30), (4923, 12, 23)),
-            "answer": 286404
-        },
-        {
-            "input": ((1622, 10, 4), (3555, 10, 12)),
-            "answer": 706021
-        },
-        {
-            "input": ((5871, 8, 23), (6155, 6, 14)),
-            "answer": 103659
-        },
-        {
-            "input": ((4632, 11, 18), (8077, 10, 26)),
-            "answer": 1258238
-        },
-        {
-            "input": ((696, 5, 7), (9241, 6, 27)),
-            "answer": 3121048
-        },
-        {
-            "input": ((6051, 1, 23), (4129, 8, 9)),
-            "answer": 701798
-        },
+    "Basic": [
+        {'input': 2427, 'answer': ['Friday']},
+        {'input': 2185, 'answer': ['Saturday']},
+        {'input': 2860, 'answer': ['Thursday', 'Friday']},
+        {'input': 1179, 'answer': ['Monday']},
+        {'input': 2611, 'answer': ['Tuesday']},
+        {'input': 1051, 'answer': ['Wednesday']},
+        {'input': 2080, 'answer': ['Monday', 'Tuesday']},
+        {'input': 2595, 'answer': ['Thursday']},
+        {'input': 922, 'answer': ['Thursday']},
+        {'input': 2639, 'answer': ['Tuesday']},
+        {'input': 2259, 'answer': ['Saturday']},
+        {'input': 863, 'answer': ['Monday']},
+        {'input': 1491, 'answer': ['Thursday']},
+        {'input': 1133, 'answer': ['Sunday']},
+        {'input': 1867, 'answer': ['Tuesday']},
+        {'input': 309, 'answer': ['Friday']},
+        {'input': 549, 'answer': ['Wednesday']},
+        {'input': 2619, 'answer': ['Friday']},
+        {'input': 1371, 'answer': ['Tuesday']},
+        {'input': 772, 'answer': ['Saturday', 'Sunday']},
+        {'input': 2731, 'answer': ['Thursday']},
+        {'input': 1548, 'answer': ['Thursday', 'Friday']},
+        {'input': 1650, 'answer': ['Saturday']},
+        {'input': 857, 'answer': ['Monday']},
+        {'input': 162, 'answer': ['Friday']},
+        {'input': 2463, 'answer': ['Monday']},
+        {'input': 297, 'answer': ['Friday']},
+        {'input': 1360, 'answer': ['Tuesday', 'Wednesday']},
+        {'input': 1672, 'answer': ['Friday', 'Saturday']},
+        {'input': 1279, 'answer': ['Sunday']},
+        {'input': 2007, 'answer': ['Monday']},
+        {'input': 1637, 'answer': ['Thursday']},
+        {'input': 1333, 'answer': ['Thursday']},
+        {'input': 2009, 'answer': ['Thursday']},
+        {'input': 2002, 'answer': ['Tuesday']},
+        {'input': 2685, 'answer': ['Thursday']},
+        {'input': 899, 'answer': ['Thursday']},
+        {'input': 2711, 'answer': ['Sunday']},
+        {'input': 337, 'answer': ['Friday']},
+        {'input': 152, 'answer': ['Saturday', 'Sunday']},
+        {'input': 2838, 'answer': ['Friday']},
+        {'input': 1931, 'answer': ['Thursday']},
+        {'input': 1186, 'answer': ['Wednesday']},
+        {'input': 1406, 'answer': ['Wednesday']},
+        {'input': 86, 'answer': ['Tuesday']},
+        {'input': 1685, 'answer': ['Monday']},
+        {'input': 1560, 'answer': ['Friday', 'Saturday']},
+        {'input': 873, 'answer': ['Sunday']},
+        {'input': 963, 'answer': ['Saturday']},
+        {'input': 296, 'answer': ['Wednesday', 'Thursday']},
+        {'input': 1114, 'answer': ['Thursday']},
+        {'input': 698, 'answer': ['Saturday']},
+        {'input': 1132, 'answer': ['Friday', 'Saturday']},
+        {'input': 830, 'answer': ['Tuesday']},
+        {'input': 2403, 'answer': ['Wednesday']},
+        {'input': 2454, 'answer': ['Thursday']},
+        {'input': 319, 'answer': ['Wednesday']},
+        {'input': 915, 'answer': ['Tuesday']},
+        {'input': 1531, 'answer': ['Thursday']},
+        {'input': 1449, 'answer': ['Monday']},
+        {'input': 736, 'answer': ['Wednesday', 'Thursday']},
+        {'input': 2256, 'answer': ['Tuesday', 'Wednesday']},
+        {'input': 2475, 'answer': ['Tuesday']},
+        {'input': 770, 'answer': ['Thursday']},
+        {'input': 838, 'answer': ['Friday']},
+        {'input': 759, 'answer': ['Thursday']},
+        {'input': 2201, 'answer': ['Thursday']},
+        {'input': 226, 'answer': ['Sunday']},
+        {'input': 594, 'answer': ['Wednesday']},
+        {'input': 796, 'answer': ['Monday', 'Tuesday']},
+        {'input': 2044, 'answer': ['Friday', 'Saturday']},
+        {'input': 1820, 'answer': ['Saturday', 'Sunday']},
+        {'input': 2596, 'answer': ['Friday', 'Saturday']},
+        {'input': 2829, 'answer': ['Monday']},
+        {'input': 2946, 'answer': ['Saturday']},
+        {'input': 1209, 'answer': ['Thursday']},
+        {'input': 1273, 'answer': ['Sunday']},
+        {'input': 306, 'answer': ['Monday']},
+        {'input': 1483, 'answer': ['Monday']},
+        {'input': 1226, 'answer': ['Thursday']},
+        {'input': 1828, 'answer': ['Tuesday', 'Wednesday']},
+        {'input': 2810, 'answer': ['Friday']},
+        {'input': 2023, 'answer': ['Sunday']},
+        {'input': 2612, 'answer': ['Wednesday', 'Thursday']},
+        {'input': 946, 'answer': ['Saturday']},
+        {'input': 101, 'answer': ['Saturday']},
+        {'input': 1732, 'answer': ['Tuesday', 'Wednesday']},
+        {'input': 2344, 'answer': ['Saturday', 'Sunday']},
+        {'input': 1532, 'answer': ['Friday', 'Saturday']},
+        {'input': 1134, 'answer': ['Monday']},
+        {'input': 2590, 'answer': ['Friday']},
+        {'input': 1837, 'answer': ['Sunday']},
+        {'input': 635, 'answer': ['Thursday']},
+        {'input': 982, 'answer': ['Tuesday']},
+        {'input': 530, 'answer': ['Sunday']},
+        {'input': 1093, 'answer': ['Sunday']},
+        {'input': 1963, 'answer': ['Tuesday']},
+        {'input': 634, 'answer': ['Wednesday']},
+        {'input': 2675, 'answer': ['Friday']},
+        {'input': 2906, 'answer': ['Friday']}
     ]
 }

@@ -47,7 +47,7 @@ api.add_listener(
             'python-27': cover,
             'python-3': cover
         },
-        function_name="days_diff"
+        function_name="most_frequent_days"
         # checker=None,  # checkers.float.comparison(2)
         # add_allowed_modules=[],
         # add_close_builtins=[],
