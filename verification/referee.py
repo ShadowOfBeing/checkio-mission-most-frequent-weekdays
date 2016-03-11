@@ -42,8 +42,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         cover_code={
-            'python-27': cover_codes.unwrap_args,
-            'python-3': cover_codes.unwrap_args
+            'python-27': None,
+            'python-3': None
         },
         function_name="most_frequent_days"
     ).on_ready)
