@@ -26,16 +26,13 @@ checkio.referee.cover_codes
 
 """
 
-from checkio import api
-from checkio.referees import cover_codes
-from checkio.referees.io import CheckiOReferee
 from checkio.signals import ON_CONNECT
-from tests import TESTS
+from checkio import api
+from checkio.referees.io import CheckiOReferee
+from checkio.referees import cover_codes
+from checkio.referees import checkers
 
-cover = """
-def cover(f, data):
-    return f(tuple(data[0]), tuple(data[1]))
-"""
+from tests import TESTS
 
 api.add_listener(
     ON_CONNECT,
