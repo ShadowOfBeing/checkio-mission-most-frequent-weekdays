@@ -24,7 +24,7 @@ TESTS = {
         {'input': 3150, 'answer': ['Sunday']},
         {'input': 3230, 'answer': ['Tuesday']},
         {'input': 328, 'answer': ['Monday', 'Sunday']},
-        {'input': 2016, 'answer': ['Monday', 'Sunday']},
+        {'input': 2016, 'answer': ['Friday', 'Saturday']},
         {'input': 334, 'answer': ['Monday']},
         {'input': 1986, 'answer': ['Wednesday']},
         {'input': 3361, 'answer': ['Thursday']},
