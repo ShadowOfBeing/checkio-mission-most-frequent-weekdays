@@ -40,9 +40,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             }
 
             //YOUR FUNCTION NAME
-            var fname = 'days_diff';
+            var fname = 'most_frequent_days';
 
-            var checkioInput = data.in || [[2014, 1, 1], [2015, 1, 1]];
+            var checkioInput = data.in;
             var checkioInputStr = fname + '(' + JSON.stringify(checkioInput[0]).replace("[", "(").replace("]", ")") +
                 ", " + JSON.stringify(checkioInput[1]).replace("[", "(").replace("]", ")") + ')';
 
