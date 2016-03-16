@@ -1,6 +1,6 @@
 def most_frequent_days(year):
     """
-        List of most frequent weekdays in the given year
+        List of most frequent days of the week in the given year
     """
     return ['Monday'] 
 
