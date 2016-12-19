@@ -35,5 +35,7 @@ TESTS = {
         {'input': 8116, 'answer': ['Wednesday', 'Thursday']},
         {'input': 9137, 'answer': ['Friday']},
         {'input': 1794, 'answer': ['Wednesday']},
+        {'input' : 1900, 'answer': ['Monday']},
+        {'input' : 2100, 'answer': ['Monday']},
     ]
 }
