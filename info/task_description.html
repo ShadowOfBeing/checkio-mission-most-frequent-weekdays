@@ -20,10 +20,15 @@
     <p>
         <strong>Example:</strong>
     </p>
-<pre class="brush: python">
-most_frequent_days(2427) == ['Friday']
-most_frequent_days(2185) == ['Saturday']
-most_frequent_days(2860) == ['Thursday', 'Friday']</pre>
+{% if interpreter.slug == "js-node" %}
+        <pre class="brush: python">most_frequent_days(1084) == ['Tuesday', 'Wednesday']
+most_frequent_days(1167) == ['Sunday']
+</pre>
+    {% else %}
+        <pre class="brush: python">most_frequent_days(1084) == ['Tuesday', 'Wednesday']
+most_frequent_days(1167) == ['Sunday']
+</pre>
+    {% endif %}
 </div>
 
 <p>

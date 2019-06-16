@@ -38,9 +38,12 @@ api.add_listener(
     ON_CONNECT,
     CheckiOReferee(
         tests=TESTS,
-        cover_code={
-            'python-27': None,
-            'python-3': None
+        function_name={
+            "python": "most_frequent_days",
+            "js": "mostFrequentDays"
         },
-        function_name="most_frequent_days"
+        cover_code={
+            'python-3': cover_codes.unwrap_args,
+            'js-node': cover_codes.js_unwrap_args,
+        },
     ).on_ready)
